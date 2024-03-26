@@ -1,1 +1,11 @@
 // app global css in SCSS form
+@font-face {
+    font-family: Poppins;
+    src: url(./font/Poppins-Regular.ttf);
+}
+
+*
+{
+    font-family: 'Poppins';
+    letter-spacing: .3mm;
+}

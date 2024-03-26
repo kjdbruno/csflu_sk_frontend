@@ -1,15 +1,12 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
-  </q-page>
+    <q-page class="q-pa-md wrapper-index">
+        <!--page header-->
+        <div class="page-header">
+            <div class="text-h4 text-uppercase text-grey-8">dashboard</div>
+        </div>
+        <!--page body-->
+        <div class="page-body">
+            <!--your code here-->
+        </div>
+    </q-page>
 </template>
-
-<script setup>
-defineOptions({
-  name: 'IndexPage'
-});
-</script>
