@@ -28,7 +28,7 @@
 
                         <!--button-->
                         <div class="q-mt-sm full-width">
-                            <q-btn v-ripple unelevated color="dark" size="lg" label="sign in" class="full-width" @click="login"/>
+                            <q-btn v-ripple unelevated color="primary" size="lg" label="sign in" class="full-width" @click="login"/>
                         </div>
                     </div>
                 </div>

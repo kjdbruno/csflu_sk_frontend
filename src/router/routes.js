@@ -3,6 +3,13 @@ const routes = [
     path: '/',
     component: () => import('layouts/UnauthorizedLayout.vue'),
     children: [
+      { path: '', component: () => import('pages/IndexPage.vue') }
+    ]
+  },
+  {
+    path: '/login',
+    component: () => import('layouts/UnauthorizedLayout.vue'),
+    children: [
       { path: '', component: () => import('pages/LoginPage.vue') }
     ]
   },
@@ -10,7 +17,7 @@ const routes = [
     path: '/home',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      { path: '', component: () => import('pages/HomePage.vue') }
     ]
   },
   {
