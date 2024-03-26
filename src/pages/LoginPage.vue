@@ -114,7 +114,7 @@ $dark: #000000;
 
 .page
 {
-    background: url('assets/bg.jpg') no-repeat bottom center / cover;
+    background: url('assets/bg.jpg') no-repeat center center / cover;
     height: 100vh;
     .wrapper
     {

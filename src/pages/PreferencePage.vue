@@ -55,8 +55,8 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-$primary-color: #09203F;
-$secondary-color: #537895;
+$primary-color: #4E65FF;
+$secondary-color: #92EFFD;
 
 $white-color: #ffffff;
 $black-color: #000000;
