@@ -1,8 +1,8 @@
 {
   "name": "csflu-sk-www",
   "version": "0.0.1",
-  "description": "Sk System Cleintside",
-  "productName": "SK",
+  "description": "LYDO System Clientside",
+  "productName": "LYDO",
   "author": "Kenneth Jay Bruno <kjdbruno@gmail.com>",
   "private": true,
   "scripts": {

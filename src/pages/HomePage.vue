@@ -8,5 +8,6 @@
         <div class="page-body">
             <!--your code here-->
         </div>
+        <!--page footer if any-->
     </q-page>
 </template>

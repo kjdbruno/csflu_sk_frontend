@@ -13,7 +13,7 @@
         </div>
         <!--page body-->
         <div class="page-body">
-            <div class="q-pt-sm component-wrapper">
+            <div class="q-pt-sm component-wrapper bg-white">
                 <component :is="components[navigationStore.preferenceComponent]" :key="navigationStore.preferenceComponent" />
             </div>
         </div>
@@ -32,7 +32,7 @@ import { onMounted } from 'vue-demi'
 import { useNavigationStore } from 'src/stores/nav-store'
 const navigationStore = useNavigationStore()
 /**
- * import pages locatio -> src/components/preference
+ * import pages, location -> src/components/preference
  */
 import UserPage from 'src/components/Preference/UserPage.vue'
 import OfficePage from 'src/components/Preference/OfficePage.vue'
@@ -55,8 +55,8 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-$primary-color: #4E65FF;
-$secondary-color: #92EFFD;
+$primary-color: #57606F;
+$secondary-color: #D3D3D3;
 
 $white-color: #ffffff;
 $black-color: #000000;
@@ -73,7 +73,7 @@ $dark-color: #1d1d1d;
                 background: $white-color;
                 display: inline-block;
                 padding: 0.5rem 1.5rem;
-                border-radius: 0.8em 0.8em 0 0;
+                border-radius: 1em 1em 0 0;
                 color: $black-color;
                 margin: 0 2px;
                 position: relative;
@@ -91,7 +91,6 @@ $dark-color: #1d1d1d;
                         bottom: 0;
                         height: 10px;
                         width: 10px;
-                        // z-index: 1;
                     }
                     &::after 
                     {

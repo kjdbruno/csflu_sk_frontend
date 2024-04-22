@@ -76,7 +76,6 @@
  * declare vue
  */
 import { ref, reactive } from 'vue'
-import { onMounted, onBeforeUnmount  } from 'vue-demi'
 /**
  * import quasar
  */
@@ -95,8 +94,8 @@ const left = ref(true)
 </script>
 
 <style lang="scss" scoped>
-$primary-color: #4E65FF;
-$secondary-color: #92EFFD;
+$primary-color: #57606F;
+$secondary-color: #D3D3D3;
 
 $white-color: #ffffff;
 $black-color: #000000;
@@ -111,7 +110,7 @@ $dark-color: #1d1d1d;
     }
     .drawer-wrapper
     {
-        background-image: url("assets/sidebar.jpg") !important;
+        background-image: url("assets/sidebar.jpeg") !important;
         background-size: cover !important;
         background-position: center;
         .drawer
@@ -142,7 +141,7 @@ $dark-color: #1d1d1d;
         }
         .navigation-item
         {
-            border-radius: 5px;
+            border-radius: 50px;
             padding-top: 15px;
             padding-bottom: 15px;
         }

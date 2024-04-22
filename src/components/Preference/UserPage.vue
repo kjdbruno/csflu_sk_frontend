@@ -7,12 +7,12 @@
                         <div class="text-h5 text-capitalize">user</div>
                     </div>
                     <div class="col-auto">
-                        <q-input outlined dense debounce="300" v-model="filter" placeholder="Search...">
+                        <q-input outlined rounded dense debounce="300" v-model="filter" placeholder="Search...">
                             <template v-slot:prepend>
                                 <q-icon name="search" />
                             </template>
-                            <template v-slot:after>
-                                <q-btn unelevated size="md" color="primary" label="new" />
+                            <template v-slot:before>
+                                <q-btn unelevated rounded size="md" color="primary" label="new" />
                             </template>
                         </q-input>
                     </div>
@@ -28,13 +28,44 @@
                     </template>
                     <template v-slot:body-cell-action="props">
                         <q-td :props="props">
-                            <!--if status is active-->
-                            <div>
-                                <!--buttons here-->
+                            <!--display if status is active-->
+                            <div class="q-gutter-xs">
+                                <q-btn unelevated rounded size="sm" color="primary" label="modify" />
+                                <q-btn unelevated rounded size="sm" color="primary" label="disable">
+                                    <q-menu anchor="center middle" self="center right">
+                                        <q-card class="no-shadow">
+                                            <q-card-section class="row items-center no-wrap">
+                                                <div>
+                                                    <div class="text-uppercase text-weight-bold">disable!</div>
+                                                    <div class="text-grey text-caption">Are you sure you want to disable this record?</div>
+                                                </div>
+                                                <q-space />
+                                                <q-btn round size="sm" icon="check" color="green-3" unelevated v-close-popup>
+                                                    <q-tooltip anchor="bottom middle" self="center middle">Yes</q-tooltip>
+                                                </q-btn>
+                                            </q-card-section>
+                                        </q-card>
+                                    </q-menu>
+                                </q-btn>
                             </div>
-                            <!--if status is inactive-->
+                            <!--display if status is inactive-->
                             <div>
-                                <!--buttons here-->
+                                <q-btn unelevated rounded size="sm" color="primary" label="enable">
+                                    <q-menu anchor="center middle" self="center right">
+                                        <q-card class="no-shadow">
+                                            <q-card-section class="row items-center no-wrap">
+                                                <div>
+                                                    <div class="text-uppercase text-weight-bold">enable!</div>
+                                                    <div class="text-grey text-caption">Are you sure you want to enable this record?</div>
+                                                </div>
+                                                <q-space />
+                                                <q-btn round size="sm" icon="check" color="green-3" unelevated v-close-popup>
+                                                    <q-tooltip anchor="bottom middle" self="center middle">Yes</q-tooltip>
+                                                </q-btn>
+                                            </q-card-section>
+                                        </q-card>
+                                    </q-menu>
+                                </q-btn>
                             </div>
                         </q-td>
                     </template>
